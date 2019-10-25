@@ -20,8 +20,6 @@ This is a Front End group project for the Front End Project course.
 
 <br>
 <br>
-<br>
-
 
 <h3> TAI: </h3>
 <ul> 
