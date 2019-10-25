@@ -3,7 +3,7 @@
 <br>
 
 
-<h1> Components: </h1>
+<h2> Components: </h2>
 <br>
 
 <h3> TOM:  </h3>
