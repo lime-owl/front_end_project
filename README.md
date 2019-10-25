@@ -28,6 +28,8 @@
 <li> landing carousel  </li> 
 </ul>
 <h4>  DOING  DESKTOP RESPONSIVE </h4>
+<br>
+<br>
 
 
 <h3> <hr> See projects: to-do list </hr></h3>
