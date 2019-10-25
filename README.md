@@ -27,7 +27,7 @@
 <li> in the news </li> 
 <li> landing carousel  </li> 
 </ul>
-<h4> DOING  DESKTOP RESPONSIVE </h4>
+<h4> <hr> DOING  DESKTOP RESPONSIVE </hr></h4>
 
 
 <h3> See projects: to-do list</h3>
