@@ -24,6 +24,6 @@
 <li>  navbar.scss </li> 
 <li>  our story  </li> 
 <li> in the news </li> 
-<li> landing carosel  </li> 
+<li> landing carousel  </li> 
 </ul>
 <h4> DOING  DESKTOP RESPONSIVE </h4>
