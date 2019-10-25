@@ -5,6 +5,7 @@ This is a Front End group project for the Front End Project course.
 
 
 <h1> Components: </h1>
+<br>
 
 <h3> TOM:  </h3>
 <ul> 
