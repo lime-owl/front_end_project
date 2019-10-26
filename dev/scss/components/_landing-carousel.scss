@@ -1,0 +1,61 @@
+@mixin arrow($location, $icon) {
+  #{$location}: 2rem;
+
+  &:before {
+    content: $icon;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    color: $theme-color;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+}
+
+.landing-carousel {
+  .slick-list {
+    height: 100%;
+  }
+
+  .slick-dots {
+    bottom: 2rem;
+
+    & li button:before {
+      font-size: 15px;
+      color: $theme-color;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    height: 55px;
+    width: 55px;
+    z-index: 10;
+  }
+
+  .slick-prev {
+    @include arrow(left, '\f053');
+  }
+
+  .slick-next {
+    @include arrow(right, '\f054');
+  }
+
+  .item {
+    position: relative;
+
+    img {
+      height: 40vw;
+      width: 100%;
+    }
+
+    .description {
+      display: none;
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // width: 60%;
+      // background-color: #ffffff80;
+      // padding: 2.5rem;
+      // margin-top: 2rem;
+    }
+  }
+}

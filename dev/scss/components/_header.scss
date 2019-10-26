@@ -80,15 +80,32 @@ header {
       background-color: white;
       border-radius: 2px;
       cursor: pointer;
+      transition: background-color .2s ease-in;
 
       &:before {
         @include pseudo-hamburger;
         top: -10px;
+        transition: transform .2s ease-in;
       }
 
       &:after {
         @include pseudo-hamburger;
         top: 10px;
+        transition: transform .2s ease-in;
+      }
+    }
+
+    &:checked+label {
+      background-color: transparent;
+
+      &:before {
+        transform: translateY(10px) rotate(-45deg);
+        background-color: white;
+      }
+
+      &:after {
+        transform: translateY(-10px) rotate(45deg);
+        background-color: white;
       }
     }
   }
@@ -113,6 +130,19 @@ header {
           &:hover {
             background-color: lighten($dark-color, 20%);
           }
+        }
+      }
+    }
+
+    .icon {
+      margin: 1rem;
+
+      a {
+        color: white;
+        padding: 0.5rem;
+
+        &:hover {
+          color: $theme-color;
         }
       }
     }
