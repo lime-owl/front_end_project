@@ -39,8 +39,9 @@ $(document).ready(() => {
     $('.modal').css('display', 'flex');
   });
 
-  $('body').click((event) => {
-    if ($(event.target).is('.modal') || $(event.target).is('.close')) {
+  $('body').click((e) => {
+    if ($(e.target).is('.modal') || $(e.target).is('.close')) {
+      e.preventDefault();
       $('.modal').hide();
       $('video').trigger('pause');
     }
