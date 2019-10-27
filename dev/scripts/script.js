@@ -33,7 +33,16 @@ $(document).ready(() => {
   });
 
   // Modal
-  $('.modal').click(function() {
-    $(this).hide();
+
+  $('.play').click((e) => {
+    e.preventDefault();
+    $('.modal').css('display', 'flex');
+  });
+
+  $('body').click((event) => {
+    if ($(event.target).is('.modal') || $(event.target).is('.close')) {
+      $('.modal').hide();
+      $('video').trigger('pause');
+    }
   });
 });

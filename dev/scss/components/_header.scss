@@ -54,7 +54,7 @@
 header {
   width: 100%;
   padding: 1.5rem;
-  background-color: $dark-color;
+  background-color: black;
   text-transform: uppercase;
   z-index: 1000;
   display: flex;
@@ -118,17 +118,17 @@ header {
     ul {
       display: flex;
       flex-direction: column;
-      background-color: $dark-color;
+      background-color: black;
 
       li {
         a {
           display: block;
           padding: 1rem;
           font-size: 1.4rem;
-          color: $white-color;
+          color: white;
 
           &:hover {
-            background-color: lighten($dark-color, 20%);
+            background-color: lighten(black, 20%);
           }
         }
       }
