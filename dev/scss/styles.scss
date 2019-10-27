@@ -3,8 +3,12 @@
 // Place your Sass imports here...
 @import './reset';
 @import './variable';
+@import './util';
 
 // Components
+@import './components/button';
 @import './components/header';
 @import './components/landing-carousel';
-
+@import './components/our-story';
+@import './components/in-the-news';
+@import './components/video-modal';

@@ -11,8 +11,14 @@
 }
 
 .landing-carousel {
+  margin-bottom: 0 !important;
+
   .slick-list {
     height: 100%;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
   }
 
   .slick-dots {
