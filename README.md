@@ -9,7 +9,6 @@
 
 <h3> TOM:  </h3>
 <ul> 
-<li> footer.scss </li> 
 <li> product card A </li> 
 <li> product card B </li> 
 <li> shop by room </li> 
