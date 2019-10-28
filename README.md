@@ -10,7 +10,6 @@
 <h3> TOM:  </h3>
 <ul> 
 <li> shop by room </li> 
-<li> best sellers card </li> 
 </ul>
 <h4> DOING  TABLET RESPONSIVE </h4>
 
