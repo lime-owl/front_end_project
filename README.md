@@ -9,8 +9,6 @@
 
 <h3> TOM:  </h3>
 <ul> 
-<li> product card A </li> 
-<li> product card B </li> 
 <li> shop by room </li> 
 <li> best sellers card </li> 
 </ul>
