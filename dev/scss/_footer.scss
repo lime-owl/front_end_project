@@ -1,0 +1,39 @@
+.logo-box{
+    padding-top: 8%;
+    padding-bottom: 2%;
+    font-size: x-large;
+    
+    div{
+        padding-bottom: 6%;
+        margin-left: 6%;
+        span{
+            padding-right: 2%;
+        }
+    }
+
+    .top-nav{
+        color: #FC851E;
+    }
+
+    .logos{
+        .fa{
+        color: black;
+        padding-right: 4%;
+        font-size: xx-large;
+        }
+    }
+}
+
+.foot-box{
+    border-top: 0.1em solid black;
+    background-color: #ebebeb;
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+    ul{
+        li{ 
+        display: block;
+        padding-bottom: 2%;
+        }
+    }
+}
