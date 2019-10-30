@@ -2,11 +2,6 @@
 
 <br>
 
-
-<h2> Components: </h2>
-<p> To be made is mobile responsive mode: width 400px</p>
-<br>
-
 <h3> TOM:  </h3>
 <ul> 
 </ul>
