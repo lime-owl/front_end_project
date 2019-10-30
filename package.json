@@ -5,7 +5,8 @@
   "author": "TWD Students",
   "license": "ISC",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "devDependencies": {
     "autoprefixer": "9.7.0",
