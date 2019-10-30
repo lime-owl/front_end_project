@@ -1,0 +1,107 @@
+@mixin pseudo-hamburger {
+  content: '';
+  display: inherit;
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: black;
+  text-transform: uppercase;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+
+  #toggle-menu {
+    display: block;
+    position: absolute;
+    top: 1.8rem;
+    height: 2rem;
+    width: 2.5rem;
+    cursor: pointer;
+    opacity: 0;
+
+    &+label {
+      display: block;
+      position: relative;
+      height: 5px;
+      width: 2.5rem;
+      background-color: white;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background-color .2s ease-in;
+
+      &:before {
+        @include pseudo-hamburger;
+        top: -10px;
+        transition: transform .2s ease-in;
+      }
+
+      &:after {
+        @include pseudo-hamburger;
+        top: 10px;
+        transition: transform .2s ease-in;
+      }
+    }
+
+    &:checked+label {
+      background-color: transparent;
+
+      &:before {
+        transform: translateY(10px) rotate(-45deg);
+        background-color: white;
+      }
+
+      &:after {
+        transform: translateY(-10px) rotate(45deg);
+        background-color: white;
+      }
+    }
+  }
+
+  nav {
+    display: none;
+    flex: 0 0 100%;
+    margin-top: 1rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+
+      li {
+        a {
+          display: block;
+          padding: 1rem;
+          font-size: 1.4rem;
+          color: white;
+
+          &:hover {
+            background-color: lighten(black, 20%);
+          }
+        }
+      }
+    }
+
+    .icon {
+      margin: 1rem;
+
+      a {
+        color: white;
+        padding: 0.5rem;
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}

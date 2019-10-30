@@ -1,5 +1,22 @@
 @charset "utf-8";
-@import "footer";
-@import "product-cards";
-@import "best-sell-cards";
-@import "shop-by-room";
+
+// Place your Sass imports here...
+@import './reset';
+@import './variable';
+@import './util';
+
+// Components
+@import './components/button';
+@import './components/header';
+@import './components/landing-carousel';
+@import './components/our-story';
+@import './components/in-the-news';
+@import './components/video-modal';
+@import "./components/footer";
+@import "./components/product-cards";
+@import "./components/best-sell-cards";
+@import "./components/shop-by-room";
+
+// Responsive
+@import './tablet';
+@import './desktop';

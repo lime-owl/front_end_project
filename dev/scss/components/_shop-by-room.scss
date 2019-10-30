@@ -1,0 +1,63 @@
+.shop-by-room-box{
+    margin-left: 6%;
+
+    h1{
+        margin-bottom: 10%;
+    }
+
+    .grid-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+    }
+}
+
+.shop-card{
+    display: flex;
+    justify-content: center;
+    height: 148px;
+    width: 148px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(80, 80, 80, 0.5);
+    background-blend-mode: multiply;
+    border-radius: 58%;
+    margin-bottom: 8%;
+
+    p{
+        font-size: large;
+        color: white;
+        align-self: center;
+    }
+}
+
+.A{
+    background-image: url("../images/shop-by1.jpg");
+}
+
+.B{
+    background-image: url("../images/shop-by2.jpg");
+}
+
+.C{
+    background-image: url("../images/shop-by3.jpg");
+}
+
+.D{
+    background-image: url("../images/shop-by4.jpg");
+}
+
+.E{
+    background-image: url("../images/shop-by5.jpg");
+}
+
+.F{
+    background-image: url("../images/shop-by6.jpg");
+}
+
+.G{
+    background-image: url("../images/shop-by7.jpg");
+}
+
+.H{
+    background-image: url("../images/shop-by8.jpg");
+}

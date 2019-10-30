@@ -1,0 +1,19 @@
+.in-the-news {
+  h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    margin: 4.5rem 2.5rem 2.5rem 2.5rem;
+    text-transform: uppercase;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      margin: 2rem;
+    }
+  }
+}
