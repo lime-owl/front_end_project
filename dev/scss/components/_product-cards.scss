@@ -30,3 +30,18 @@
 .b{
     background-image: url("../images/productB.jpg");
 }
+
+
+@mixin pcard-tablet {
+    .p-card{
+        background-color: rgba(131, 129, 129, 0.5);
+        .card-info{
+            margin-left: 54%;
+            margin-right: -23%;
+            padding-top: 8%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+
+}

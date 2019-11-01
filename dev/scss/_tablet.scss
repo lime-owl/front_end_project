@@ -1,4 +1,8 @@
  @media only screen and (min-width: 481px) {
   // include mixins for components here
-   @include shopby-desktop;
+   @include shopby-tablet;
+ }
+
+ @media only screen and (min-width: 580px) {
+    @include pcard-tablet;
  }
