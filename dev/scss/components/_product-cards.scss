@@ -31,7 +31,6 @@
     background-image: url("../images/productB.jpg");
 }
 
-
 @mixin pcard-tablet {
     .p-card{
         background-color: rgba(131, 129, 129, 0.5);
@@ -42,6 +41,4 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
-
-
 }
