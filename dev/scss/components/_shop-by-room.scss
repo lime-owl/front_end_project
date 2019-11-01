@@ -64,5 +64,14 @@
 
 
 @mixin shopby-desktop {
-   
+    .shop-by-room-box{
+        margin-left: 2%;
+    .grid-box{
+        display: block;
+    }
+}
+
+    .shop-card{
+        margin-left: 12%;
+    }
 }
