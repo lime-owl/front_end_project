@@ -62,3 +62,23 @@
 .H{
     background-image: url("../images/shop-by8.jpg");
 }
+
+
+@mixin shopby-tablet {
+    .shop-by-room-box{
+        margin-left: 2%;
+    .grid-box{
+        display: block;
+    }
+}
+    .shop-card{
+        margin-left: 12%;
+    p{
+    text-align: center; 
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-top: 32%;
+    }
+    }
+}
