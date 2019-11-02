@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-	<link rel="stylesheet" href="styles/styles.css?cb=1572468813349">
+	<link rel="stylesheet" href="styles/styles.css?cb=1572657339739">
 </head>
 <!-- Put your HTML code here... -->
 <header>
@@ -49,7 +49,7 @@
 	<!-- Modal -->
 	<div class="modal">
 		<div class="modal-content">
-			<a class="close" href="#">Close</a>
+			<a class="modal-close" href="#">Close</a>
 			<video controls>
 				<source src="./media/this-is-audioengine.mp4" type="video/mp4">
 				Your browser does not support the video tag.
@@ -117,13 +117,15 @@
 			</div>
 		</section>
 		<section class="best-sell-box">
-			<h1> BEST SELLERS </h1>
+			<h2> BEST SELLERS </h2>
 			<div class="sell-card">
 				<figure>
 					<figcaption> A2+ DESKTOP SPEAKERS </figcaption>
 					<img src="./images/sellA.jpg" alt="stereo">
 				</figure>
-				<button type="button" class="btn btn-warning">SHOP NOW</button>
+				<div>
+						<a href="#" class="button">SHOP NOW</a>
+				</div>
 			</div>
 
 			<div class="sell-card">
@@ -131,7 +133,9 @@
 					<figcaption> B1 Bluetooth Music Receiver </figcaption>
 					<img src="./images/sellB.jpg" alt="stereo">
 				</figure>
-				<button type="button" class="btn btn-warning">SHOP NOW</button>
+				<div>
+						<a href="#" class="button">SHOP NOW</a>
+				</div>
 			</div>
 
 			<div class="sell-card">
@@ -139,11 +143,13 @@
 					<figcaption> A5+ Wireless Speakers</figcaption>
 					<img src="./images/sellC.jpg" alt="stereo">
 				</figure>
-				<button type="button" class="btn btn-warning">SHOP NOW</button>
+				<div>
+						<a href="#" class="button">SHOP NOW</a>
+				</div>
 			</div>
 		</section>
 		<section class="shop-by-room-box">
-			<h1> SHOP BY ROOM OR DEVICE</h1>
+			<h2> SHOP BY ROOM OR DEVICE</h2>
 			<div class="grid-box">
 				<div class="shop-card A">
 					<p>WITH SONOS</p>
@@ -182,17 +188,17 @@
 		<section class="product-cards">
 			<div class="p-card a">
 				<div class="card-info">
-					<h1>ALL NEW</h1>
+					<h3>All New</h3>
 					<p>The A5+ Wireless Speakers</p>
-					<button type="button" class="btn btn-light"> LEARN MORE </button>
+					<button type="button" class="btn btn-light">Learn More</button>
 				</div>
 			</div>
 
 			<div class="p-card b">
 				<div class="card-info">
-					<h1>FEELING LUCKY</h1>
+					<h3>Feeling Luck</h3>
 					<p>The A5+ Wireless Speakers</p>
-					<button type="button" class="btn btn-light"> LEARN MORE </button>
+					<button type="button" class="btn btn-light">Learn More</button>
 				</div>
 			</div>
 		</section>
@@ -229,41 +235,45 @@
 	<div class="footer-box">
 		<div class="logo-box">
 			<div class="top-nav">
-				<span class="glyphicon glyphicon-arrow-up"></span>
-				<span>TOP</span>
+				<a href="#">
+					<i class="fas fa-arrow-up"></i>
+					<span>TOP</span>
+				</a>
 			</div>
 
 			<div class="logos">
-				<span class="fa fa-facebook"></span>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-pinterest"></a>
-				<a href="#" class="fa fa-youtube"></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-pinterest"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
 			</div>
 
 			<div class="email">
-				<span class="glyphicon glyphicon-envelope"></span>
-				<span>EMAIL SIGN UP</span>
+				<a href="#">
+					<i class="far fa-envelope"></i>
+					<span>EMAIL SIGN UP</span>
+				</a>
 			</div>
 		</div>
 
 		<footer class="foot-box">
 			<ul>
-				<li> Speakers </li>
-				<li> Components </li>
-				<li> Refurbished </li>
-				<li> Find a Store </li>
-				<li> Support </li>
-				<li> Explore </li>
-				<li> About </li>
-				<li> Contact </li>
-				<li> Press </li>
-				<li> Warranty </li>
-				<li> Millitary </li>
-				<li> Apps </li>
-				<li> Privacy </li>
-				<li> Terms </li>
-				<li> Legal </li>
-				<li> News </li>
+				<li><a href="#">Speakers</a></li>
+				<li><a href="#">Components</a></li>
+				<li><a href="#">Refurbished</a></li>
+				<li><a href="#">Find a Store</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Explore</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Warranty</a></li>
+				<li><a href="#">Millitary</a></li>
+				<li><a href="#">Apps</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Legal</a></li>
+				<li><a href="#">News</a></li>
 			</ul>
 		</footer>
 	</div>
@@ -272,7 +282,7 @@
 	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<script src="scripts/script.min.js?cb=1572468813349"></script>
+	<script src="scripts/script.min.js?cb=1572657339739"></script>
 	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
 </body>
 

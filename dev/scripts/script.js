@@ -40,7 +40,7 @@ $(document).ready(() => {
   });
 
   $('body').click((e) => {
-    if ($(e.target).is('.modal') || $(e.target).is('.close')) {
+    if ($(e.target).is('.modal') || $(e.target).is('.modal-close')) {
       e.preventDefault();
       $('.modal').hide();
       $('video').trigger('pause');
