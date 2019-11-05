@@ -111,6 +111,7 @@ body {
 	line-height: 1;
 	font-family: 'Source Sans Pro', sans-serif;
 	overflow-x: hidden;
+	background-color: rgb(37, 37, 37);
 }
 
 ol,
@@ -146,6 +147,12 @@ a {
 	&:hover {
 		text-decoration: inherit;
 	}
+}
+
+main {
+	max-width: $max-window-with;
+	margin: 0 auto;
+	background-color: white;
 }
 
 *,

@@ -22,12 +22,29 @@ $(document).ready(() => {
   // In the news carousel
   $('.in-the-news .slider').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 767,
-        settings: 'unslick',
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
       },
     ],
   });
