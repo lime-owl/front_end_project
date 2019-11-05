@@ -20,7 +20,7 @@ $(document).ready(() => {
   });
 
   // In the news carousel
-  $('.in-the-news .slider').slick({
+  const slickSetting = {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 3,
@@ -46,7 +46,19 @@ $(document).ready(() => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 500,
+        settings: 'unslick',
+      },
     ],
+  };
+  $('.in-the-news .slider').slick(slickSetting);
+
+  $(window).resize(() => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth > 500) {
+      $('.in-the-news .slider').not('.slick-initialized').slick(slickSetting);
+    }
   });
 
   // Modal
