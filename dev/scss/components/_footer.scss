@@ -40,14 +40,39 @@
 
 
 @mixin foot-desk {
+
+    .logo-box{
+        display: grid;
+        padding-top: 4%;
+        padding-left: 4%;
+        padding-bottom: 0;
+
+    
+        .top-nav{
+            grid-column-start: 1;
+            margin-bottom: 8%;
+        }
+
+        .logos{
+            grid-column-start: 1;
+        }
+
+        .email{
+            grid-column-start: 2;
+            margin-left: 72%;
+        }
+    }
+
     .foot-box{
         padding-top: 4%;
         padding-left: 8%;
         padding-bottom: 4%;    
+
         ul{
        display: grid;
-       grid-template-columns:       1fr 1fr 1fr 1fr;
+       grid-template-columns:  1fr 1fr 1fr 1fr;
         }
+
        a{ 
                 color: black;
             }
