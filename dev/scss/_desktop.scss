@@ -1,4 +1,5 @@
 @media only screen and (min-width: $desktop-threshold) {
  @include   best-sell-desk;
  @include  p-card-desk;
+ @include foot-desk;
 }
