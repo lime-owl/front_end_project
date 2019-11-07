@@ -61,7 +61,10 @@
 @mixin p-card-desk {
     .p-card{
         height: 688px;
-    
+        background-color: rgba(255, 214, 214, 0.5);
+        background-blend-mode: multiply;
+        background-size: 100% 118%;
+
         .card-info{
             margin-left: 63%;
             margin-top: 6%;

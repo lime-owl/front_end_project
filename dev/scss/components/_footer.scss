@@ -12,11 +12,27 @@
     }
 
     .top-nav{
+        span{
         color: #FC851E;
+        }
+        i{
+            color: #FC851E;
+        }
     }
 
+
+    .email{
+        span{
+        color: black;
+        }
+        i{
+            color:black;
+        }
+    }
+
+
     .logos{
-        .fa{
+        a{
         color: black;
         padding-right: 4%;
         font-size: xx-large;
