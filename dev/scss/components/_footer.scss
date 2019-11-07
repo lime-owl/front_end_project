@@ -55,13 +55,27 @@
 }
 
 
-@mixin foot-desk {
+@mixin foot-tab {
+.logo-box{
+    font-size: small;
+}
 
+.logos{
+    a{
+font-size: larger;
+    }
+}
+
+}
+
+
+@mixin foot-desk {
     .logo-box{
         display: grid;
         padding-top: 4%;
         padding-left: 4%;
         padding-bottom: 0;
+        font-size: x-large;
 
     
         .top-nav{
@@ -71,6 +85,9 @@
 
         .logos{
             grid-column-start: 1;
+            a{
+                font-size: xx-large;
+            }
         }
 
         .email{
