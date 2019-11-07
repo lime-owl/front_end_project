@@ -31,14 +31,53 @@
     background-image: url("../images/productB.jpg");
 }
 
-@mixin pcard-tablet {
+ @mixin pcard-tablet {
     .p-card{
         background-color: rgba(131, 129, 129, 0.5);
         .card-info{
-            margin-left: 54%;
+            margin-left: 57%;
             margin-right: -23%;
-            padding-top: 8%;
-            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 6%;
+        padding-left: 3%;
+           position: absolute;
+           padding-top: 2%;
+          width: 44%;
+         height: 16%;
+          background-color: rgba(0, 0, 0, 0.5);
+             h3{
+                 font-size: 1rem;
+             }
+             button {
+                 font-size: 1rem;
+             }
+         }
+     }
+  }
+
+
+@mixin p-card-desk {
+    .p-card{
+        height: 688px;
+    
+        .card-info{
+            margin-left: 63%;
+            margin-top: 6%;
+            padding-left: 3%;
+            position: absolute;
+            font-size: xx-large;
+            padding-top: 2%;
+            width: 44%;
+            height: 34%;
+
+            h3{
+                font-size: inherit;
+            }
+
+            button{
+                padding: 1%;
+                width: 18%;
+            }
         }
+    
     }
 }
