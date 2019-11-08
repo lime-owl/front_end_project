@@ -1,52 +1,88 @@
-.p-card {
+.p-card{
     height: 288px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgba(80, 80, 80, 0.5);
     background-blend-mode: multiply;
 
-    .card-info {
+    .card-info{
         color: white;
         margin-left: 8%;
         padding-top: 2%;
         text-shadow: 1px 0 0;
 
-        h3 {
-            text-transform: uppercase;
-            font-size: 2rem;
+        p{
+            padding-bottom: 2%;
         }
 
-        p {
-            padding-bottom: 1rem;
-        }
-
-        button {
-            color: #666;
-            border-radius: 0.4rem;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            padding: 0.5rem 2rem;
-            font-weight: 500;
+        button{
+            padding: 3%;
+            width: 38%;
+            border-radius: 7%;
         }
     }
 }
 
-.a {
+.a{
     background-image: url("../images/productA.jpg");
 }
 
-.b {
+.b{
     background-image: url("../images/productB.jpg");
 }
 
-@mixin pcard-tablet {
+ @mixin pcard-tablet {
     .p-card{
         background-color: rgba(131, 129, 129, 0.5);
         .card-info{
-            margin-left: 54%;
+            margin-left: 57%;
             margin-right: -23%;
-            padding-top: 8%;
-            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 6%;
+        padding-left: 3%;
+           position: absolute;
+           padding-top: 2%;
+          width: 44%;
+         height: 18%;
+          background-color: rgba(0, 0, 0, 0.5);
+             h3{
+                 font-size: 1rem;
+             }
+             button {
+                font-size: small;
+                padding: 2%;
+                width: 38%;
+                border-radius: 7%;
+            }
+         }
+     }
+  }
+
+
+@mixin p-card-desk {
+    .p-card{
+        height: 688px;
+        background-color: rgba(255, 214, 214, 0.5);
+        background-blend-mode: multiply;
+        background-size: 100% 118%;
+
+        .card-info{
+            margin-left: 63%;
+            margin-top: 6%;
+            padding-left: 3%;
+            position: absolute;
+            font-size: xx-large;
+            padding-top: 2%;
+            width: 44%;
+            height: 34%;
+
+            h3{
+                font-size: inherit;
+            }
+
+            button{
+                padding: 1%;
+                width: 18%;
+            }
         }
     }
 }
