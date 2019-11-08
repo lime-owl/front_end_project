@@ -1,3 +1,15 @@
 .italic {
   font-style: italic;
 }
+
+@mixin arrow($location, $offset, $icon) {
+  #{$location}: $offset;
+
+  &:before {
+    content: $icon;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    color: $theme-color;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+}

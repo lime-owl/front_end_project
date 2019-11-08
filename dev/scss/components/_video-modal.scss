@@ -38,6 +38,18 @@
   }
 }
 
+@mixin video-modal-desktop {
+  .video-modal {
+    height: 40rem;
+  }
+}
+
+@mixin video-modal-tablet {
+  .video-modal {
+    height: 30rem;
+  }
+}
+
 .video-modal {
   background-image: url('../../images/bg-this-is-audio-engine-section.jpg');
   background-position: center;

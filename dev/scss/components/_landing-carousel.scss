@@ -1,12 +1,52 @@
-@mixin arrow($location, $icon) {
-  #{$location}: 2rem;
+@mixin landing-carousel-desktop {
+  .landing-carousel {
+    .item {
+      .description {
+        h4 {
+          font-size: 3rem;
+        }
 
-  &:before {
-    content: $icon;
-    font-family: "Font Awesome 5 Free", sans-serif;
-    color: $theme-color;
-    font-weight: 900;
-    font-size: 2.5rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@mixin landing-carousel-tablet {
+  .landing-carousel {
+    .item {
+      .description {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        right: 0;
+        top: 1.5rem;
+        background-color: #ffffff96;
+        padding: 2.5rem 6.5rem 2.5rem 2.5rem;
+
+        h4 {
+          color: #666;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1.5rem;
+        }
+
+        span {
+          font-size: 1.2rem;
+          color: #666;
+          margin-bottom: 2rem;
+        }
+
+        .button {
+          margin: 0;
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
 
@@ -38,30 +78,24 @@
   }
 
   .slick-prev {
-    @include arrow(left, '\f053');
+    @include arrow(left, 2rem, '\f053');
   }
 
   .slick-next {
-    @include arrow(right, '\f054');
+    @include arrow(right, 2rem, '\f054');
   }
 
   .item {
     position: relative;
 
     img {
-      height: 40vw;
+      max-height: 35rem;
       width: 100%;
     }
 
     .description {
       display: none;
-      // position: absolute;
-      // top: 0;
-      // right: 0;
-      // width: 60%;
-      // background-color: #ffffff80;
-      // padding: 2.5rem;
-      // margin-top: 2rem;
+      max-width: 50%;
     }
   }
 }

@@ -8,6 +8,38 @@
   border-radius: inherit;
 }
 
+@mixin header-desktop {
+  header {
+    padding: 0 0 0 1.5rem;
+
+    .toggle {
+      display: none;
+    }
+
+    nav {
+      margin: 0;
+      display: flex !important;
+      justify-content: flex-end;
+      flex: 1;
+
+      ul {
+        flex-direction: row;
+        align-items: center;
+        li {
+          a {
+            padding: 1.5rem;
+          }
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
 header {
   width: 100%;
   padding: 1.5rem;
@@ -19,6 +51,8 @@ header {
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+  max-width: $max-window-with;
+  margin: 0 auto;
 
   #toggle-menu {
     display: block;

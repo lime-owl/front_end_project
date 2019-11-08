@@ -1,3 +1,53 @@
+@mixin in-the-news-desktop {
+  .in-the-news {
+    .slider {
+      .item {
+        a {
+          img {
+            max-width: 8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin in-the-news-tablet {
+  .in-the-news {
+    .slider {
+      display: block;
+
+      .slick-list {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .slick-prev,
+      .slick-next {
+        height: 55px;
+        width: 55px;
+        z-index: 10;
+      }
+
+      .slick-prev {
+        @include arrow(left, 3%, '\f053');
+      }
+
+      .slick-next {
+        @include arrow(right, 3%, '\f054');
+      }
+
+      .item {
+        a {
+          img {
+            max-width: 6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 .in-the-news {
   h2 {
     font-weight: 300;
@@ -11,9 +61,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 4rem 0;
 
     .item {
       margin: 2rem;
+      text-align: center;
+
+      a {
+        display: inline-block;
+      }
     }
   }
 }
