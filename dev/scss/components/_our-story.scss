@@ -1,3 +1,19 @@
+@mixin our-story-desktop {
+  .our-story {
+    background-image: url('../../images/bg-our-story-section.jpg');
+  }
+}
+
+@mixin our-story-tablet {
+  .our-story {
+    background-image: url('../../images/bg-our-story-section-tablet.jpg');
+
+    .text-box {
+      max-width: 60%;
+    }
+  }
+}
+
 .our-story {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/bg-our-story-section-phone-square.jpg');
   background-position: center;
@@ -11,11 +27,16 @@
     margin-bottom: 1rem;
     font-size: 2.5rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
   }
 
-  p {
-    font-weight: 500;
-    line-height: 1.4;
+  .text-box {
+    margin: 0 auto;
+
+    p {
+      font-weight: 500;
+      line-height: 1.4;
+      font-size: 1.2rem;
+    }
   }
 }

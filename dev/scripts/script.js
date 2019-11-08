@@ -20,16 +20,45 @@ $(document).ready(() => {
   });
 
   // In the news carousel
-  $('.in-the-news .slider').slick({
+  const slickSetting = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 500,
         settings: 'unslick',
       },
     ],
+  };
+  $('.in-the-news .slider').slick(slickSetting);
+
+  $(window).resize(() => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth > 500) {
+      $('.in-the-news .slider').not('.slick-initialized').slick(slickSetting);
+    }
   });
 
   // Modal
@@ -40,7 +69,7 @@ $(document).ready(() => {
   });
 
   $('body').click((e) => {
-    if ($(e.target).is('.modal') || $(e.target).is('.close')) {
+    if ($(e.target).is('.modal') || $(e.target).is('.modal-close')) {
       e.preventDefault();
       $('.modal').hide();
       $('video').trigger('pause');

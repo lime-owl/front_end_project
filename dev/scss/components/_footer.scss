@@ -1,12 +1,14 @@
-.logo-box{
+.logo-box {
     padding-top: 8%;
     padding-bottom: 2%;
     font-size: x-large;
-    
-    div{
+    background-color: white;
+
+    div {
         padding-bottom: 6%;
         margin-left: 6%;
-        span{
+
+        span {
             padding-right: 2%;
         }
     }
@@ -16,6 +18,8 @@
         color: #FC851E;
         }
         i{
+    .top-nav {
+        a {
             color: #FC851E;
         }
     }
@@ -36,11 +40,40 @@
         color: black;
         padding-right: 4%;
         font-size: xx-large;
+    .logos {
+        display: flex;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            background-color: black;
+            border-radius: 50%;
+            height: 3rem;
+            width: 3rem;
+
+            i {
+                color: white;
+                font-size: x-large;
+            }
+        }
+    }
+
+    .email {
+        a {
+            color: #666666;
+
+            i {
+                color: #2e2e2e;
+                font-size: 2.5rem;
+                vertical-align: middle;
+            }
         }
     }
 }
 
-.foot-box{
+.foot-box {
     border-top: 0.1em solid black;
     background-color: #ebebeb;
     padding-top: 6%;
@@ -85,6 +118,14 @@ font-size: larger;
         .top-nav{
             grid-column-start: 1;
             margin-bottom: 8%;
+    ul {
+        li {
+            display: block;
+            padding: 0.5rem 2rem;
+
+            a {
+                color: #666666;
+            }
         }
 
         .logos{

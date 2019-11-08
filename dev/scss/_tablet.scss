@@ -9,3 +9,23 @@
     @include   best-sell-desk;
     @include foot-tab;
  }
+@media only screen and (min-width: 675px) {
+  @include landing-carousel-tablet;
+  @include video-modal-tablet;
+}
+
+@media only screen and (min-width: 750px) {
+  @include our-story-tablet;
+}
+
+@media only screen and (min-width: 500px) {
+  @include in-the-news-tablet;
+}
+
+@media only screen and (min-width: 481px) {
+  @include shopby-tablet;
+}
+
+@media only screen and (min-width: 580px) {
+  @include pcard-tablet;
+}
