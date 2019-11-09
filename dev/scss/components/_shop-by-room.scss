@@ -3,7 +3,7 @@
     margin-bottom: 6%;
 
     h2{
-        margin-bottom: 10%;
+        margin-bottom: 7%;
         font-size: 2rem;
     }
 
@@ -64,7 +64,6 @@
     background-image: url("../images/shop-by8.jpg");
 }
 
-
 @mixin shopby-tablet {
     .shop-by-room-box{
         margin-left: 2%;
@@ -72,6 +71,7 @@
         .slider {
             display: block;
       
+
             .slick-list {
               width: 80%;
               margin: 0 auto;
@@ -99,7 +99,7 @@
             justify-content: center;
             display: flex;
             position: relative;
-            margin-top: 32%;
+            margin-top: 3%;
             }
             }
         }
