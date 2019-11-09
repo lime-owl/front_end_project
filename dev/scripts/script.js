@@ -53,6 +53,8 @@ $(document).ready(() => {
     ],
   };
   $('.in-the-news .slider').slick(slickSetting);
+  $('.shop-by-room-box .slider').slick(slickSetting);
+
 
   $(window).resize(() => {
     const windowWidth = window.innerWidth;

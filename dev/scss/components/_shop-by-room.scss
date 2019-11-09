@@ -1,12 +1,13 @@
 .shop-by-room-box{
     margin-left: 6%;
+    margin-bottom: 6%;
 
     h2{
         margin-bottom: 10%;
         font-size: 2rem;
     }
 
-    .grid-box{
+    .slider{
         display: grid;
         grid-template-columns: 1fr 1fr;    
     }
@@ -67,18 +68,40 @@
 @mixin shopby-tablet {
     .shop-by-room-box{
         margin-left: 2%;
-    .grid-box{
-        display: block;
-    }
-}
-    .shop-card{
-        margin-left: 12%;
-    p{
-    text-align: center; 
-    justify-content: center;
-    display: flex;
-    position: relative;
-    margin-top: 32%;
-    }
-    }
+
+        .slider {
+            display: block;
+      
+            .slick-list {
+              width: 80%;
+              margin: 0 auto;
+            }
+      
+            .slick-prev,
+            .slick-next {
+              height: 55px;
+              width: 55px;
+              z-index: 10;
+            }
+      
+            .slick-prev {
+              @include arrow(left, 3%, '\f053');
+            }
+      
+            .slick-next {
+              @include arrow(right, 3%, '\f054');
+            }
+
+            .shop-card{
+                margin-left: 12%;
+            p{
+            text-align: center; 
+            justify-content: center;
+            display: flex;
+            position: relative;
+            margin-top: 32%;
+            }
+            }
+        }
+ }
 }
