@@ -53,11 +53,14 @@ $(document).ready(() => {
     ],
   };
   $('.in-the-news .slider').slick(slickSetting);
+  $('.shop-by-room-box .slider').slick(slickSetting);
+
 
   $(window).resize(() => {
     const windowWidth = window.innerWidth;
     if (windowWidth > 500) {
       $('.in-the-news .slider').not('.slick-initialized').slick(slickSetting);
+      $('.shop-by-room-box .slider').not('.slick-initialized').slick(slickSetting);
     }
   });
 
