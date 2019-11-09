@@ -53,7 +53,36 @@ $(document).ready(() => {
     ],
   };
   $('.in-the-news .slider').slick(slickSetting);
-  $('.shop-by-room-box .slider').slick(slickSetting);
+  $('.shop-by-room-box .slider').slick({
+    ...slickSetting,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: 'unslick',
+      },
+    ],
+  });
 
 
   $(window).resize(() => {

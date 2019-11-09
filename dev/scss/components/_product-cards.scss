@@ -1,86 +1,101 @@
-.p-card{
+.p-card {
     height: 288px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgba(80, 80, 80, 0.5);
     background-blend-mode: multiply;
 
-    .card-info{
+    .card-info {
         color: white;
         margin-left: 8%;
-        padding-top: 2%;
+        padding-top: 2.5rem;
         text-shadow: 1px 0 0;
 
-        p{
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            padding: 0.2rem 0;
+        }
+
+        p {
             padding-bottom: 2%;
         }
 
-        button{
+        button {
             padding: 1%;
             width: 27%;
-            border-radius: 7%;
+            border-radius: 5px;
             margin-top: 2%;
+            color: #666;
         }
     }
 }
 
-.a{
+.a {
     background-image: url("../images/productA.jpg");
 }
 
-.b{
+.b {
     background-image: url("../images/productB.jpg");
 }
 
- @mixin pcard-tablet {
-    .p-card{
-        background-color: rgba(131, 129, 129, 0.5);
-        .card-info{
-    margin-left: 63%;
-    margin-top: 6%;
-    padding-left: 5%;
-    position: absolute;
-    padding-top: 2%;
-    width: 44%;
-    height: 22%;
-    background-color: rgba(0, 0, 0, 0.5);
-             h3{
-                 font-size: 1rem;
-             }
-             button {
-                font-size: small;
-                padding: 1%;
-                width: 31%;
-                border-radius: 7%;
-                margin-top: 2%;
+@mixin pcard-tablet {
+    .p-card {
+        height: 488px;
+        background-color: transparent;
+
+        .card-info {
+            margin-left: 63%;
+            margin-top: 6rem;
+            padding-left: 5%;
+            position: absolute;
+            padding-top: 2%;
+            width: 44%;
+            height: 22%;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            h3 {
+                font-size: 1.8rem;
             }
-         }
-     }
-  }
+
+            p {
+                font-weight: 200;
+            }
+
+            button {
+                font-size: 1.2rem;
+                width: auto;
+                border-radius: 5px;
+                margin-top: 1rem;
+                padding: 0.2rem 1.5rem;
+            }
+        }
+    }
+}
 
 @mixin p-card-desk {
-    .p-card{
+    .p-card {
         height: 688px;
         background-color: rgba(255, 214, 214, 0.5);
         background-blend-mode: multiply;
         background-size: 100% 118%;
         display: flex;
 
-        .card-info{
+        .card-info {
             position: static;
             font-size: xx-large;
             padding-top: 2%;
             width: 37%;
-            height: 34%;
+            height: 12rem;
 
-            h3{
-                font-size: inherit;
+            h3 {
+                font-size: 2.5rem;
             }
 
-            button{
+            button {
                 margin-top: 2%;
                 padding: 1%;
-                width: 31%;
+                padding: 0.5rem 2.5rem;
             }
         }
     }

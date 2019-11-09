@@ -1,74 +1,98 @@
-.best-sell-box{
+.best-sell-box {
     margin-left: 4%;
     margin-bottom: 8%;
-  
-    h2{
+
+    h2 {
         margin-bottom: 8%;
         padding-top: 4%;
         font-size: 2rem;
     }
 }
 
-.sell-card{
+.sell-card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-bottom: 4%;
 
-    figure{
-        figcaption{
-            font-size: large;
-            margin-bottom: 4%;
-        }
-
-        img{
-            height: 208px;
-        }
+    h3 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin: 1.5rem 0;
     }
-    
-    button{
-        height: 12%;
-        margin-top: 19%;
-        margin-left: 6%;
-        padding: 2%;
-        width: 30%;
+
+    div {
+        display: flex;
+        align-items: center;
+
+        figure {
+            figcaption {
+                font-size: large;
+                margin-bottom: 4%;
+            }
+
+            img {
+                height: 208px;
+            }
+        }
     }
 }
 
-@mixin best-sell-desk {
-    .best-sell-box{
+@mixin best-sell-tablet {
+    .best-sell-box {
         display: flex;
         flex-direction: column;
+        margin: 0;
 
-        h2{
+        h2 {
             align-self: center;
             padding-bottom: 0%;
         }
 
-        .sell-cards-box{
-        display: inline-flex;
-        justify-content: space-around;
+        .sell-cards-box {
+            display: inline-flex;
+            justify-content: space-around;
 
-       .sell-card{
-        display: flex;
-        flex-direction: column;
+            .sell-card {
+                display: flex;
+                flex-direction: column;
+                position: relative;
 
-        figure{
-            position: relative;
-            img{
-                margin-bottom: 18%;
-            }
-            button{
-                margin-top: 2%;
-            }
-            figcaption{
-                position: absolute;
-                bottom: 0;   
-                left: 0;
-                right: 0;
+                h3 {
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    position: absolute;
+                    left: 0;
+                    bottom: 5.5rem;
+                    z-index: 100;
+                    text-align: center;
+                }
+
+                div {
+                    flex-direction: column;
+
+                    figure {
+                        position: relative;
+
+                        img {
+                            margin-bottom: 18%;
+                        }
+
+                        button {
+                            margin-top: 2%;
+                        }
+
+                        figcaption {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+
+
             }
         }
-       }
-    }
 
     }
 }

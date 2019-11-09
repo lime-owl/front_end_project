@@ -1,19 +1,20 @@
-.shop-by-room-box{
+.shop-by-room-box {
     margin-left: 6%;
     margin-bottom: 6%;
 
-    h2{
+    h2 {
         margin-bottom: 7%;
         font-size: 2rem;
     }
 
-    .slider{
+    .slider {
         display: grid;
-        grid-template-columns: 1fr 1fr;    
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 }
 
-.shop-card{
+.shop-card {
     display: flex;
     justify-content: center;
     height: 148px;
@@ -25,83 +26,97 @@
     border-radius: 58%;
     margin-bottom: 8%;
 
-    p{
+    p {
         color: white;
         align-self: center;
         font-size: 1.5rem;
     }
 }
 
-.A{
+.A {
     background-image: url("../images/shop-by1.jpg");
 }
 
-.B{
+.B {
     background-image: url("../images/shop-by2.jpg");
 }
 
-.C{
+.C {
     background-image: url("../images/shop-by3.jpg");
 }
 
-.D{
+.D {
     background-image: url("../images/shop-by4.jpg");
 }
 
-.E{
+.E {
     background-image: url("../images/shop-by5.jpg");
 }
 
-.F{
+.F {
     background-image: url("../images/shop-by6.jpg");
 }
 
-.G{
+.G {
     background-image: url("../images/shop-by7.jpg");
 }
 
-.H{
+.H {
     background-image: url("../images/shop-by8.jpg");
 }
 
 @mixin shopby-tablet {
-    .shop-by-room-box{
+    .shop-by-room-box {
         margin-left: 2%;
+
+        h2 {
+            text-align: center;
+        }
 
         .slider {
             display: block;
-      
+
 
             .slick-list {
-              width: 80%;
-              margin: 0 auto;
-            }
-      
-            .slick-prev,
-            .slick-next {
-              height: 55px;
-              width: 55px;
-              z-index: 10;
-            }
-      
-            .slick-prev {
-              @include arrow(left, 3%, '\f053');
-            }
-      
-            .slick-next {
-              @include arrow(right, 3%, '\f054');
+                width: 80%;
+                margin: 0 auto;
             }
 
-            .shop-card{
-                margin-left: 12%;
-            p{
-            text-align: center; 
-            justify-content: center;
-            display: flex;
-            position: relative;
-            margin-top: 3%;
+            .slick-prev,
+            .slick-next {
+                height: 55px;
+                width: 55px;
+                z-index: 10;
             }
+
+            .slick-prev {
+                @include arrow(left, 3%, '\f053');
             }
+
+            .slick-next {
+                @include arrow(right, 3%, '\f054');
+            }
+
+            .item {
+                a {
+                    img {
+                        max-width: 8rem;
+                    }
+                }
+
+                .shop-card {
+                    margin-left: 12%;
+
+                    p {
+                        text-align: center;
+                        justify-content: center;
+                        display: flex;
+                        position: relative;
+                        margin-top: 3%;
+                    }
+                }
+            }
+
         }
- }
+    }
 }
